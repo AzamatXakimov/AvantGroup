@@ -1,0 +1,134 @@
+.about-us-hero{
+    position: relative;
+    z-index: 2;
+}
+.about-us-hero-textbox {
+    max-width: 819px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.about-us-hero-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 63px;
+    
+    color: #000;
+}
+
+.about-us-hero-descbox {
+    max-width: 765px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about-us-hero-desc {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 147%;
+    color: #8b8b8b;
+}
+
+
+.about-us-hero-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(125.03deg, #FF0E37 0%, #C80F0F 100%);
+    border-radius: 36px;
+
+    &::after{
+        display: inline-block;
+        width: 29px;
+        height: 11px;
+        margin-left: 26px;
+        background-image: url("../../assets/images/arrow-to-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-style: cover;
+        content: "";
+    }
+}
+
+.about-us-hero-list {
+    display: flex;
+    max-width: 1137.14px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 37px 29px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    list-style: none;
+}
+
+.about-us-hero-item {
+    display: flex;
+    align-items: start;
+    &:not(:last-child) {
+        margin-right: 80px;
+    }
+
+    &::before{
+        display: inline-block;
+        flex-shrink: 0;
+        width: 46px;
+        height: 46px;
+        margin-right: 20px;
+        margin-top: 10px;
+        background-image: url("../../assets/images/m2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-style: cover;
+        content: "";
+    }
+    
+    &:first-child::before{
+        background-image: url("../../assets/images/settings.png");
+    }
+}
+
+.about-us-hero-item-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #ff103b;
+}
+
+.about-us-hero-item-textbox {
+    max-width: 163px;
+    width: 100%;
+}
+
+.about-us-hero-item-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+
+.about-us-hero-item-desc {
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: #898686;
+}
+

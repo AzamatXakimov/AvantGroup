@@ -1,0 +1,106 @@
+.equipment {
+    margin-bottom: 277px;
+}
+
+.equipment-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.equipment-company-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+    width: 100%;
+    margin-right: 25px;
+    padding: 108px 20px;
+    border-radius: 20px;
+    background-image: url("../../assets/images/ESAB-build.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.equipment-company-img {
+    width: 256px;
+    height: 256px;
+    border-radius: 20px;
+}
+
+.equipment-company-infobox {
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.equipment-company-textbox {
+    max-width: 422px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.equipment-company-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.equipment-company-text {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.equipment-company-descbox {
+    max-width: 411px;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 2px solid #ff0d34;
+}
+
+.equipment-company-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;    
+}
+
+.equipment-infobox {
+    max-width: 641px;
+    width: 100%;
+}
+
+.equipment-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.equipment-descbox {
+    max-width: 508px;
+    width: 100%;
+}
+
+.equipment-desc {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #393743;
+}

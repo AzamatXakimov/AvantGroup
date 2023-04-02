@@ -1,0 +1,161 @@
+.buildings {
+    margin-bottom: 150px;
+}
+.buildings-wrapper {
+    max-width: 1908px;
+    width: 100%;
+    margin: 0 auto;
+}
+.buildings-item{
+    padding-top: 242px;
+    padding-bottom: 298px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.buildings-item-first {
+    background-image: url("../../assets/images/buildings-bg-1.jpg");
+}
+.buildings-item-second {
+    background-image: url("../../assets/images/buildings-bg-2.jpg");
+}
+.buildings-item-third {
+    background-image: url("../../assets/images/buildings-bg-3.jpg");
+}
+.buildings-item-fourth {
+    background-image: url("../../assets/images/buildings-bg-4.jpg");
+}
+
+.buildings-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1457px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 59px;
+    padding-bottom: 58px;
+    padding-right: 20px;
+    padding-left: 20px;
+    backdrop-filter: blur(32px);
+    border-radius: 20px;
+
+    &::before{
+        display: inline-block;
+        width: 194px;
+        height: 194px;
+        margin-right: 66px;
+        background-image: url("../../assets/images/Build-icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        content: "";
+    }
+}
+
+.buildings-inner-first {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.buildings-inner-second {
+    background-color: rgba(64, 255, 0, 0.5);
+}
+.buildings-inner-third {
+    background-color: rgba(0, 8, 255, 0.5);
+}
+.buildings-inner-fourth {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buildings-infobox {
+    max-width: 726px;
+    width: 100%;
+}
+
+.buildings-infobox-top {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.buildings-infobox-top-first {
+    border-bottom: 2px solid #ff103b;
+}
+.buildings-infobox-top-second {
+    border-bottom: 2px solid #40ff00;
+}
+.buildings-infobox-top-third {
+    border-bottom: 2px solid  #0008ff;
+}
+.buildings-infobox-top-fourth {
+    border-bottom: 2px solid #000;
+}
+
+.buildings-infobox-bottom {
+    max-width: 644px;
+    width: 100%;
+}
+
+.buildings-title {
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.buildings-text {
+    display: inline-block;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.buildings-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+}
+
+.swiper-pagination{
+    padding-left: 50px;
+    text-align: start;
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 198px;
+    height: 146px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    cursor: pointer;
+
+    &:nth-child(1) {
+        background-image: url("../../assets/images/buildings-bg-1.jpg");
+    }
+    &:nth-child(2) {
+        background-image: url("../../assets/images/buildings-bg-2.jpg");
+    }
+    &:nth-child(3) {
+        background-image: url("../../assets/images/buildings-bg-3.jpg");
+    }
+    &:nth-child(4) {
+        background-image: url("../../assets/images/buildings-bg-4.jpg");
+    }
+}
+.swiper-pagination-bullet-active {
+    display: none;
+}

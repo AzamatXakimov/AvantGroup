@@ -1,0 +1,99 @@
+.about-us {
+    padding-top: 150px;
+    padding-bottom: 140px;
+    background-image: url("../../assets/images/logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 630px) calc(50% - 370px);
+}
+
+.about-us-title {
+    margin-top: 0;
+    margin-bottom: 93px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    color: #000;    
+}
+
+.about-us-inner {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.about-us-infobox {
+    max-width: 581px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.about-us-text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    color: #898686;    
+}
+
+.about-us-desc {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #898686;
+}
+
+.about-us-link {
+    display: inline-block;
+    max-width: 195px;
+    width: 100%;
+    padding: 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;    
+    background-color: #FF0D34;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 6px 16px 0px rgba(255, 13, 52, 0.22);
+}
+
+.about-us-building-box {
+    position: relative;
+    border: 1px solid #FF103B;
+}
+.about-us-building-box-first {
+    top: 44px;
+    border-radius: 181.511px 181.511px 0px 0px;
+}
+.about-us-building-box-second {
+    top: -136px;
+    border-radius: 241.258px 241.258px 0px 0px;
+}
+
+.about-us-building-img-first {
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    width: 370.09px;
+    height: 504.19px;
+    border-radius: 181.511px 181.511px 0px 0px;
+
+}
+.about-us-building-img-second {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    width: 439.92px;
+    height: 568.86px;
+    border-radius: 241.258px 241.258px 0px 0px;
+}

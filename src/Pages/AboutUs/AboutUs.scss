@@ -1,0 +1,31 @@
+.hero-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 163px;
+    background-color: #eff8ff;
+}
+
+.about-us-hero-bg-image {
+    position: absolute;
+    bottom: -490px;
+    left: calc(50% - 460px);
+    object-fit: cover;
+}
+
+.about-us-hero-build-img-1 {
+    position: absolute;
+    top: 296px;
+    left: calc(50% + 670px);
+}
+
+.about-us-hero-build-img-2 {
+    position: absolute;
+    top: 530px;
+    left: calc(50% + 770px);
+}
+
+.about-us-hero-build-img-3 {
+    position: absolute;
+    bottom: 118px;
+    left: calc(50% + 747px);
+}

@@ -1,0 +1,110 @@
+/* ROOT */
+:root {
+	--main-font-family: "Poppins", "Arial", sans-serif;
+	--main-font-weight: 400;
+	--main-body-bg-color: #fff;
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: url("./assets/fonts/poppins-v20-latin-300.woff2") format("woff2"),
+        url("./assets/fonts/poppins-v20-latin-300.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+        url("./assets/fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/pt-serif-v17-latin-regular.woff2") format("woff2"), 
+        url("./assets/fonts/pt-serif-v17-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/poppins-v20-latin-600.woff2") format("woff2"),
+        url("./assets/fonts/poppins-v20-latin-600.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/poppins-v20-latin-700.woff2") format("woff2"),
+        url("./assets/fonts/poppins-v20-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/times-new-roman-bold.woff2") format("woff2"),
+        url("./assets/fonts/times-new-roman-bold.woff") format("woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+img {
+	display: block;
+	height: auto;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	height: 100%;
+	margin: 0;
+	font-family: var(--main-font-family);
+	font-weight: var(--main-font-weight);
+	background-color: var(--main-body-bg-color);
+}
+
+.site-main {
+	flex-grow: 1;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-color-text {
+    color: #ff103b;
+}

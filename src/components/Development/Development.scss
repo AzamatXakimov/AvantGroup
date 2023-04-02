@@ -1,0 +1,201 @@
+.development {
+    position: relative;
+    margin-bottom: 150px; 
+    background-image: url("../../assets/images/logo-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 600px) calc(50% + 20px);
+}
+
+.development-infobox {
+    max-width: 700px;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.development-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000;    
+}
+
+.development-descbox {
+    max-width: 620px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.development-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #393743;
+}
+
+.development-link {
+    display: inline-block;
+    max-width: 412px;
+    width: 100%;
+    padding: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(125.03deg, #FF0E37 0%, #C80F0F 100%);
+    border-radius: 36px;
+    text-decoration: none;
+}
+
+.development-img {
+    position: absolute;
+    top: -460px;
+    left: calc(50% + 60px);
+    z-index: 1;
+}
+
+.development-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    margin-top: 269px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.development-item {
+    max-width: 508px;
+    width: 100%;
+    padding: 48px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    &:not(:last-child){
+        margin-right: 23px;
+    }
+    &:nth-child(1) {
+        background-image: linear-gradient(180deg, #EE1037 0%, #BA102E 100%);
+
+        & .development-item-descbox {
+            max-width: 282px;
+            &::before {
+                width: 77px;
+                height: 77px;
+                background-image: url("../../assets/images/cube-3d-white.png");
+            }
+        }
+
+        & .development-item-desc {
+            color: #fff;
+        }
+    }
+
+    &:nth-child(2) {
+        & .development-item-descbox {
+            max-width: 371px;
+            &::before {
+                width: 77px;
+                height: 77px;
+                background-image: url("../../assets/images/sheets-icon.png");
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        & .development-item-descbox {
+            max-width: 381px;
+            &::before {
+                width: 77px;
+                height: 77px;
+                background-image: url("../../assets/images/compass-icon.png");
+            }
+        }
+    }
+
+}
+
+.development-list-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.development-second-list-item {
+    max-width: 772px;
+    width: 100%;
+    padding: 48px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    &:nth-child(1) {
+        margin-right: 25px;
+        & .development-item-descbox {
+            max-width: 489px;
+            &::before {
+                width: 71px;
+                height: 66px;
+                background-image: url("../../assets/images/square-icon.png");
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        background-image: linear-gradient(180deg, #EE1037 0%, #BA102E 100%);
+        & .development-item-descbox {
+            max-width: 598px;
+            &::before {
+                width: 71px;
+                height: 66px;
+                background-image: url("../../assets/images/pen-sheet-icon-white.png");
+            }
+        }
+        & .development-item-desc {
+            color: #fff;
+        }
+    }
+}
+
+.development-item-descbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    &::before {
+        display: inline-block;
+        margin-bottom: 25px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: "";
+    }
+}
+
+.development-item-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #272324;
+    text-align: center;
+}

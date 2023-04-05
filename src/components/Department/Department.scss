@@ -53,7 +53,7 @@
 
 .department-double-image {
     width: 499.66px;
-    height: 411.47px;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
     
@@ -102,11 +102,51 @@
 
 .department-center-img {
     width: 499.66px;
-    height: 852.95px;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
     
     &:hover {
         transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .department {
+        margin-bottom: 111px;
+    }
+    
+    .department-title {
+        margin-bottom: 25px;
+        font-size: 37px;
+        line-height: 50px;
+    }
+    
+    .department-double-box-inner-first {
+        margin-bottom: 25px;
+    
+        & .department-text {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    
+    .department-double-image {
+        width: 370.66px;
+    }
+    
+    .department-text {
+        bottom: 31px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .department-center-box {
+        margin-right: 25.52px;
+        margin-left: 25.52px;
+    }
+    
+    .department-center-img {
+        width: 370.66px;
     }
 }

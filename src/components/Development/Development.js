@@ -77,7 +77,10 @@ export const Development = () => {
                         </p>
                     </div>
                     <Link className="development-link" to="/">
-                        Задание на проектирование
+                        <span className="link-text-box">
+                            Задание на проектирование
+                        </span>
+                        <span className="development-links-rhombus"></span>
                     </Link>
                 </div>
                 <img className="development-img" src={AtomFigures} ref={developmentImgRef} alt="atom figures image" />

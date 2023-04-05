@@ -40,6 +40,8 @@
 }
 
 .development-link {
+    position: relative;
+    overflow: hidden;
     display: inline-block;
     max-width: 412px;
     width: 100%;
@@ -54,6 +56,42 @@
     background-image: linear-gradient(125.03deg, #FF0E37 0%, #C80F0F 100%);
     border-radius: 36px;
     text-decoration: none;
+
+    &::before {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        background-image: linear-gradient(125.03deg, #FF0E37 0%, #C80F0F 100%);
+        opacity: 0.7;
+        transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        transition: transform 0.4s cubic-bezier(0.4,0,1,1);
+        content: '';
+    }
+
+    &:hover {
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+
+        & .development-links-rhombus {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+    }
+}
+
+.development-links-rhombus {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transition: transform 0.4s cubic-bezier(0.4,0,1,1);
 }
 
 .development-img {
@@ -61,12 +99,14 @@
     top: -460px;
     left: calc(50% + 60px);
     z-index: 1;
+    width: 770px;
+    height: auto;
 }
 
 .development-list {
     position: relative;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     z-index: 2;
     margin-top: 269px;
@@ -76,6 +116,9 @@
 }
 
 .development-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 508px;
     width: 100%;
     padding: 48px;
@@ -128,7 +171,7 @@
 
 .development-list-second {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     margin-top: 33px;
     margin-bottom: 0;
@@ -137,6 +180,9 @@
 }
 
 .development-second-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 772px;
     width: 100%;
     padding: 48px;
@@ -198,4 +244,125 @@
     line-height: 32px;
     color: #272324;
     text-align: center;
+}
+
+@media only screen and (max-width: 1550px) {
+    .development {
+        margin-bottom: 110px; 
+        background-position: calc(50% + 450px) calc(50% + 40px);
+        background-size: 500px auto;
+    }
+    
+    .development-infobox {
+        max-width: 530px;
+    }
+    
+    .development-title {
+        margin-bottom: 17px;
+        font-size: 42px;   
+    }
+    
+    .development-descbox {
+        max-width: 500px;
+        margin-bottom: 27px;
+    }
+    
+    .development-desc {
+        font-size: 22px;
+    }
+    
+    .development-link {
+        max-width: 325px;
+        padding: 22px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    .development-img {
+        top: -365px;
+        left: calc(50% + 30px);
+        width: 640px;
+    }
+    
+    .development-list {
+        margin-top: 229px;
+    }
+    
+    .development-item {
+        max-width: 375px;
+        padding: 28px;
+        &:not(:last-child){
+            margin-right: 18px;
+        }
+        &:nth-child(1) {
+            & .development-item-descbox {
+                max-width: 190px;
+                &::before {
+                    width: 57px;
+                    height: 57px;
+                }
+            }
+        }
+    
+        &:nth-child(2) {
+            & .development-item-descbox {
+                max-width: 255px;
+                &::before {
+                    width: 57px;
+                    height: 57px;
+                }
+            }
+        }
+    
+        &:nth-child(3) {
+            & .development-item-descbox {
+                max-width: 251px;
+                &::before {
+                    width: 57px;
+                    height: 57px;
+                }
+            }
+        }
+    
+    }
+    
+    .development-list-second {
+        margin-top: 25px;
+    }
+    
+    .development-second-list-item {
+        max-width: 571px;
+        padding: 35px;
+        &:nth-child(1) {
+            margin-right: 18px;
+            & .development-item-descbox {
+                max-width: 335px;
+                &::before {
+                    width: 51px;
+                    height: 46px;
+                }
+            }
+        }
+    
+        &:nth-child(2) {
+            & .development-item-descbox {
+                max-width: 385px;
+                &::before {
+                    width: 51px;
+                    height: 46px;
+                }
+            }
+        }
+    }
+    
+    .development-item-descbox {
+        &::before {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .development-item-desc {
+        font-size: 15px;
+        line-height: 27px;
+    }
 }

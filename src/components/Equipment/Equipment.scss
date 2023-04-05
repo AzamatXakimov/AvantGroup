@@ -25,7 +25,7 @@
 
 .equipment-company-img {
     width: 256px;
-    height: 256px;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -103,4 +103,60 @@
     font-size: 25px;
     line-height: 150%;
     color: #393743;
+}
+
+@media only screen and (max-width: 1550px) {
+    .equipment {
+        margin-bottom: 237px;
+    }
+    
+    .equipment-company-box {
+        max-width: 640px;
+        padding: 80px 20px;
+    }
+    
+    .equipment-company-img {
+        width: 170px;
+    }
+    
+    .equipment-company-infobox {
+        padding-left: 20px;
+    }
+    
+    .equipment-company-textbox {
+        max-width: 325px;
+    }
+    
+    .equipment-company-title {
+        font-size: 27px;
+    }
+    
+    .equipment-company-text {
+        font-size: 16px;
+    }
+    
+    .equipment-company-descbox {
+        max-width: 320px;
+    }
+    
+    .equipment-company-desc {
+        font-size: 16px;
+    }
+    
+    .equipment-infobox {
+        max-width: 495px;
+    }
+    
+    .equipment-title {
+        margin-bottom: 17px;
+        font-size: 42px;
+    }
+    
+    .equipment-descbox {
+        max-width: 390px;
+    }
+    
+    .equipment-desc {
+        font-size: 22px;
+    }
 }

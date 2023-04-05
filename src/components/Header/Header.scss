@@ -1,8 +1,19 @@
 .site-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10;
     margin-bottom: 90px;
     padding: 30px 0;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+
+    &.change {
+        background-color: #fff;
+        // backdrop-filter: blur(5px);
+    }
 }
 
 .header-inner {
@@ -77,6 +88,8 @@
 }
 
 .header-link {
+    position: relative;
+    overflow: hidden;
     display: inline-block;
     min-width: 163px;
     padding: 16.5px 20px;
@@ -90,4 +103,75 @@
     text-align: center;
     text-decoration: none;
     box-shadow: 0px 6px 16px 0px rgba(255, 6, 34, 0.7);
+    transition: background-color 0.4s cubic-bezier(0.4,0,1,1), color 0.4s cubic-bezier(0.4,0,1,1);
+
+    &::before {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        background-color: #ff0d34;
+        opacity: 0.5;
+        transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        transition: transform 0.4s cubic-bezier(0.4,0,1,1);
+        content: '';
+    }
+
+    &:hover {
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+
+        & .header-links-rhombus {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+    }
+}
+
+.header-links-rhombus {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transition: transform 0.4s cubic-bezier(0.4,0,1,1);
+}
+
+@media only screen and (max-width: 1550px) {
+    .site-header {
+        padding: 20px 0;
+    }
+    
+    .header-logo-img {
+        width: 56px;
+        height: 70px;
+    }
+    
+    .header-nav-item {
+        &:not(:last-child) {
+            margin-right: 34px;
+        }
+    }
+    
+    .header-nav-link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .header-lang-btn {
+        font-size: 22px;
+        line-height: 47px;
+    }
+    
+    .header-link {
+        min-width: 160px;
+        padding: 13px 27px;
+        font-size: 17px;
+        line-height: 25px;
+    }
 }

@@ -23,8 +23,8 @@ export const CompanyConfidence = () => {
             complete: () => {
                 anime({
                     targets: buildingImgRef.current,
-                    bottom: "20px",
-                    left: "20px",
+                    bottom: "15px",
+                    left: "15px",
                     easing: 'easeOutExpo',
                     duration: 500,
                 })

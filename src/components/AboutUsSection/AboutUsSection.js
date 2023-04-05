@@ -27,8 +27,8 @@ export const AboutUsSection = () => {
             complete: () => {
                 anime({
                     targets: aboutUsBuildingFirstImgRef.current,
-                    bottom: "20px",
-                    left: "20px",
+                    bottom: "15px",
+                    left: "15px",
                     easing: 'easeOutExpo',
                     duration: 500,
                 })
@@ -46,8 +46,8 @@ export const AboutUsSection = () => {
             complete: () => {
                 anime({
                     targets: aboutUsBuildingSecondImgRef.current,
-                    bottom: "20px",
-                    right: "20px",
+                    bottom: "15px",
+                    right: "15px",
                     easing: 'easeOutExpo',
                     duration: 500,
                 })
@@ -106,7 +106,10 @@ export const AboutUsSection = () => {
                             OOO 'ENGINEERING' Avant Metal Group - компания, которая зарекомендовала себя как надежного и ответственного производителя. Также, тесно сотрудничает с различными локальными и лидирующими зарубежными компаниями в таких странах как Корея, Турция, Китай, Россия.
                         </p>
                         <Link className="about-us-link" to="/">
-                            Подробнее
+                            <span className="link-text-box">
+                                Подробнее
+                            </span>
+                            <span className="about-links-rhombus"></span>
                         </Link>
                     </div>
 

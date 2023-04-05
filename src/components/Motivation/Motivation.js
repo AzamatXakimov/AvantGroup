@@ -11,14 +11,14 @@ export const Motivation = () => {
         const windowHeight = window.innerHeight;
         const animationMotivationFirsItem = anime({
             targets: motivationFirstItemtRef.current,
-            translateX: ["510px", 0],
+            translateX: ["400px", 0],
             easing: 'easeOutExpo',
             duration: 1500,
             autoplay: false,
         })
         const animationMotivationLastItem = anime({
             targets: motivationLastItemtRef.current,
-            translateX: ["-470px", 0],
+            translateX: ["-320px", 0],
             easing: 'easeOutExpo',
             duration: 1500,
             autoplay: false,

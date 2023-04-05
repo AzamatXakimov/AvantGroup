@@ -51,6 +51,8 @@
 }
 
 .about-us-link {
+    position: relative;
+    overflow: hidden;
     display: inline-block;
     max-width: 195px;
     width: 100%;
@@ -60,11 +62,46 @@
     font-size: 18px;
     line-height: 27px;
     color: #fff;    
-    background-color: #FF0D34;
+    background-color: #ff0d34;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
     box-shadow: 0px 6px 16px 0px rgba(255, 13, 52, 0.22);
+
+    &::before {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        background-color: #ff0d34;
+        opacity: 0.5;
+        transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        transition: transform 0.4s cubic-bezier(0.4,0,1,1);
+        content: '';
+    }
+
+    &:hover {
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+
+        & .about-links-rhombus {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        }
+    }
+}
+.about-links-rhombus {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transition: transform 0.4s cubic-bezier(0.4,0,1,1);
 }
 
 .about-us-building-box {
@@ -85,7 +122,7 @@
     bottom: 20px;
     left: 20px;
     width: 370.09px;
-    height: 504.19px;
+    height: auto;
     border-radius: 181.511px 181.511px 0px 0px;
 
 }
@@ -94,6 +131,69 @@
     bottom: 20px;
     right: 20px;
     width: 439.92px;
-    height: 568.86px;
+    height: auto;
     border-radius: 241.258px 241.258px 0px 0px;
+}
+
+@media only screen and (max-width: 1550px) {
+    .about-us {
+        padding-top: 110px;
+        padding-bottom: 100px;
+        background-position: calc(50% - 460px) calc(50% - 275px);
+        background-size: 500px auto;
+    }
+    
+    .about-us-title {
+        margin-bottom: 80px;
+        font-size: 40px;
+        line-height: 65px;
+    }
+    
+    .about-us-infobox {
+        max-width: 415px;
+    }
+    
+    .about-us-text {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        color: #898686;    
+    }
+    
+    .about-us-desc {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 150%;
+    }
+    
+    .about-us-link {
+        display: inline-block;
+        max-width: 195px;
+        padding: 18px;
+        font-size: 15px;
+        line-height: 23px;
+        color: #fff;    
+    }
+    
+    .about-us-building-box-first {
+        top: 44px;
+        border-radius: 181.511px 181.511px 0px 0px;
+    }
+    .about-us-building-box-second {
+        top: -136px;
+        border-radius: 241.258px 241.258px 0px 0px;
+    }
+    
+    .about-us-building-img-first {
+        width: 250.09px;
+        border-radius: 181.511px 181.511px 0px 0px;
+    
+    }
+    .about-us-building-img-second {
+        width: 319.92px;
+        border-radius: 241.258px 241.258px 0px 0px;
+    }    
 }

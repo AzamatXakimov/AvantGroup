@@ -1,9 +1,35 @@
 import { Link, NavLink } from "react-router-dom"
 import "./Header.scss";
 import Logo from "../../assets/images/header-logo.svg"
+import { useEffect, useRef, useState } from "react";
 export const Header = () => {
+    const [headerColorChange, setHeaderColorChange] = useState(false)
+    const headerRef = useRef()
+    useEffect(() => {
+		// const elementOffsetTop = headerRef.current.offsetTop;
+
+        console.log(window);    
+        const windowHeight = window.innerHeight;
+		const handleScroll = () => {
+            const currentScrollPosition = window.pageYOffset + windowHeight;
+
+			// if (currentScrollPosition > 1024) {
+            //     setHeaderColorChange(true)
+            //     // window.removeEventListener('scroll', handleScroll);
+			// }
+			if (currentScrollPosition > windowHeight) {
+                setHeaderColorChange(true)
+                // window.removeEventListener('scroll', handleScroll);
+			}
+            else {
+                setHeaderColorChange(false)
+            }
+		};
+
+		window.addEventListener('scroll', handleScroll);
+	}, []);
     return <>
-        <header className="site-header">
+        <header className={`site-header ${headerColorChange ? "change" : ""}`} ref={headerRef}>
             <div className="container">
                 <div className="header-inner">
                     <Link className="header-logo" to="/">
@@ -38,7 +64,12 @@ export const Header = () => {
                         </button>
                     </div>
 
-                    <Link className="header-link" to="/contacts">Контакты</Link>
+                    <Link className="header-link" to="/contacts">
+                        <span className="link-text-box">
+                            Контакты
+                        </span>
+                        <span className="header-links-rhombus"></span>
+                    </Link>
                 </div>
             </div>
         </header>

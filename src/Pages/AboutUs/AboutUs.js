@@ -25,7 +25,7 @@ export const AboutUs = () => {
     useEffect(() => {
         const BgImgAnimation = anime({
             targets: ImgWrapperBg.current,
-            left: ["calc(50%)", "calc(50% - 460px)"],
+            left: ["calc(50%)", "calc(50% - 230px)"],
             opacity: [0, 1],
             easing: 'easeInOutQuad',
             duration: 1700,

@@ -1,12 +1,14 @@
 .hero-wrapper {
     position: relative;
     overflow: hidden;
+    padding-top: 240px;
     padding-bottom: 163px;
     background-color: #eff8ff;
 }
 
 .about-us-hero-bg-image {
     position: absolute;
+    height: auto;
     bottom: -490px;
     left: calc(50% - 460px);
     object-fit: cover;
@@ -16,16 +18,53 @@
     position: absolute;
     top: 296px;
     left: calc(50% + 670px);
+    width: 193.89px;
+    height: auto;
 }
 
 .about-us-hero-build-img-2 {
     position: absolute;
     top: 530px;
     left: calc(50% + 770px);
+    width: 158.36px;
+    height: auto;
 }
 
 .about-us-hero-build-img-3 {
     position: absolute;
     bottom: 118px;
     left: calc(50% + 747px);
+    width: 145.37px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1550px) {
+    .hero-wrapper {
+        padding-top: 150px;
+        padding-bottom: 63px;
+        background-color: #eff8ff;
+    }
+    .about-us-hero-bg-image {
+        width: 1627.67px;
+        left: calc(50% - 230px);
+        bottom: -340px;
+    }
+    
+    .about-us-hero-build-img-1 {
+        top: 263px;
+        left: calc(50% + 530px);
+        width: 130.89px;
+    }
+    
+    .about-us-hero-build-img-2 {
+        top: 425px;
+        left: calc(50% + 600px);
+        width: 98.36px;
+    }
+    
+    .about-us-hero-build-img-3 {
+        bottom: 112px;
+        left: calc(50% + 585px);
+        width: 90.37px;
+    }    
 }

@@ -108,3 +108,14 @@ body {
 .main-color-text {
     color: #ff103b;
 }
+
+.link-text-box {
+    position: relative;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 1550px) {
+    .container {
+        max-width: 1200px;
+    }
+}

@@ -18,13 +18,13 @@
     bottom: 20px;
     left: 20px;
     width: 370.09px;
-    height: 504.19px;
+    height: auto;
     border-radius: 181.511px 181.511px 0px 0px;
 }
 
 .company-confidence-img {
     width: 341px;
-    height: 289px;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -43,4 +43,32 @@
     font-size: 30px;
     line-height: 140%;
     color: #0C0918;
+}
+
+@media only screen and (max-width: 1550px) {
+    .company-confidence {
+        margin-bottom: 131px;
+    }
+    
+    .company-confidence-building-box {
+        top: 15px;
+    }
+    .company-confidence-bulding {
+        bottom: 15px;
+        left: 15px;
+        width: 250.09px;
+    }
+    
+    .company-confidence-img {
+        width: 270px;
+    }
+    
+    .company-confidence-descbox {
+        max-width: 535px;
+        padding-top: 148px;
+    }
+    
+    .company-confidence-desc {
+        font-size: 21px;
+    }
 }

@@ -16,13 +16,10 @@ export const AboutUsSection = () => {
 
         const windowHeight = window.innerHeight;
         const animationBuildingFirstImg = anime({
-            targets: aboutUsBuildingFirstImgRef.current,
-            bottom: 0,
-            left: 0,
-            scale: [0, 1],
-            opacity: [0, 1],
+            targets: ".about-us-building-imgbox-round-first",
             easing: 'easeOutExpo',
-            duration: 1300,
+            height: 0,
+            duration: 3000,
             autoplay: false,
             complete: () => {
                 anime({
@@ -35,13 +32,10 @@ export const AboutUsSection = () => {
             }
         })
         const animationBuildingSecondImg = anime({
-            targets: aboutUsBuildingSecondImgRef.current,
-            bottom: 0,
-            right: 0,
-            scale: [0, 1],
-            opacity: [0, 1],
+            targets: ".about-us-building-imgbox-round-second",
             easing: 'easeOutExpo',
-            duration: 1300,
+            width: 0,
+            duration: 3000,
             autoplay: false,
             complete: () => {
                 anime({
@@ -53,6 +47,7 @@ export const AboutUsSection = () => {
                 })
             }
         })
+
         const animationBuildingFirstBox = anime({
             targets: aboutUsBuildingFirstImgBoxRef.current,
             translateX: ["-500px", 0],
@@ -95,7 +90,12 @@ export const AboutUsSection = () => {
                 </h2>
                 <div className="about-us-inner" ref={aboutUsInnerRef}>
                     <div className="about-us-building-box about-us-building-box-first" ref={aboutUsBuildingFirstImgBoxRef}>
-                        <img className="about-us-building-img-first" src={building1} ref={aboutUsBuildingFirstImgRef} alt="Building image" />
+                        <div className="about-us-building-imgbox about-us-building-imgbox-first" ref={aboutUsBuildingFirstImgRef}>
+                            <span className="about-us-building-imgbox-overlay about-us-building-imgbox-round-first">
+
+                            </span>
+                            <img className="about-us-building-img-first" src={building1} alt="Building image" />
+                        </div>
                     </div>
 
                     <div className="about-us-infobox">
@@ -114,7 +114,12 @@ export const AboutUsSection = () => {
                     </div>
 
                     <div className="about-us-building-box about-us-building-box-second" ref={aboutUsBuildingSecondImgBoxRef}>
-                        <img className="about-us-building-img-second" src={building2} ref={aboutUsBuildingSecondImgRef} alt="Building image" />
+                        <div className="about-us-building-imgbox about-us-building-imgbox-second" ref={aboutUsBuildingSecondImgRef}>
+                            <span className="about-us-building-imgbox-overlay about-us-building-imgbox-round-second" >
+
+                            </span>
+                            <img className="about-us-building-img-second" src={building2}  alt="Building image" />
+                        </div>
                     </div>
                 </div>
             </div>

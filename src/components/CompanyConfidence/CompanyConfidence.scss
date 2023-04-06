@@ -15,8 +15,7 @@
 }
 .company-confidence-bulding {
     position: relative;
-    bottom: 20px;
-    left: 20px;
+
     width: 370.09px;
     height: auto;
     border-radius: 181.511px 181.511px 0px 0px;
@@ -45,6 +44,27 @@
     color: #0C0918;
 }
 
+.company-confidence-building-imgbox {
+    position: relative;
+    overflow: hidden;
+    // bottom: 20px;
+    // left: 20px;
+    border-radius: 181.511px 181.511px 0px 0px;
+}
+.company-confidence-building-imgbox-overlay {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    width: 660px;
+    height: 700px;
+    top: -60px;
+    right: -230px;
+    transform: rotate(45deg);
+    // background-color: rgba(231, 0, 0, 0.9);
+    // background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
+}
+
 @media only screen and (max-width: 1550px) {
     .company-confidence {
         margin-bottom: 131px;
@@ -70,5 +90,11 @@
     
     .company-confidence-desc {
         font-size: 21px;
+    }
+    .company-confidence-building-imgbox-overlay {
+        width: 450px;
+        height: 490px;
+        top: -60px;
+        right: -160px;
     }
 }

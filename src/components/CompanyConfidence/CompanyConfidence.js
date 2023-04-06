@@ -12,11 +12,8 @@ export const CompanyConfidence = () => {
 
         const windowHeight = window.innerHeight;
         const animationBuildingImg = anime({
-            targets: buildingImgRef.current,
-            bottom: 0,
-            left: 0,
-            scale: [0, 1],
-            opacity: [0, 1],
+            targets: ".company-confidence-building-imgbox-overlay",
+            height: 0,
             easing: 'easeOutExpo',
             duration: 1300,
             autoplay: false,
@@ -30,6 +27,7 @@ export const CompanyConfidence = () => {
                 })
             }
         })
+
         const animationBuildingBox = anime({
             targets: buildingImgBoxRef.current,
             translateX: ["-500px", 0],
@@ -57,7 +55,12 @@ export const CompanyConfidence = () => {
             <div className="container">
                 <div className="company-confidence-inner">
                     <div className="company-confidence-building-box" ref={buildingImgBoxRef}>
-                        <img className="company-confidence-bulding" src={Building3} ref={buildingImgRef} alt="Company Building image" />
+                        <div className="company-confidence-building-imgbox" ref={buildingImgRef}>
+                            <span className="company-confidence-building-imgbox-overlay">
+
+                            </span>
+                            <img className="company-confidence-bulding" src={Building3}alt="Company Building image" />
+                        </div>
                     </div>
                     <div className="company-confidence-descbox">
                         <p className="company-confidence-desc">

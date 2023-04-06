@@ -108,6 +108,43 @@
     position: relative;
     border: 1px solid #FF103B;
 }
+
+.about-us-building-imgbox {
+    position: relative;
+    overflow: hidden;
+}
+.about-us-building-imgbox-first {
+    // bottom: 20px;
+    // left: 20px;
+    border-radius: 181.511px 181.511px 0px 0px;
+}
+.about-us-building-imgbox-second {
+    // bottom: 20px;
+    // right: 20px;
+    border-radius: 241.258px 241.258px 0px 0px;
+}
+
+.about-us-building-imgbox-overlay {
+    position: absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+    // background-color: rgba(231, 0, 0, 0.9);
+    // background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
+}
+.about-us-building-imgbox-round-first {
+    width: 660px;
+    height: 700px;
+    top: -60px;
+    right: -230px;
+}
+.about-us-building-imgbox-round-second {
+    height: 820px;
+    width: 820px;
+    top: -189px;
+    left: -190px;
+}
+
 .about-us-building-box-first {
     top: 44px;
     border-radius: 181.511px 181.511px 0px 0px;
@@ -118,18 +155,11 @@
 }
 
 .about-us-building-img-first {
-    position: relative;
-    bottom: 20px;
-    left: 20px;
     width: 370.09px;
     height: auto;
     border-radius: 181.511px 181.511px 0px 0px;
-
 }
 .about-us-building-img-second {
-    position: relative;
-    bottom: 20px;
-    right: 20px;
     width: 439.92px;
     height: auto;
     border-radius: 241.258px 241.258px 0px 0px;
@@ -196,4 +226,17 @@
         width: 319.92px;
         border-radius: 241.258px 241.258px 0px 0px;
     }    
+
+    .about-us-building-imgbox-round-first {
+        width: 450px;
+        height: 490px;
+        top: -60px;
+        right: -160px;
+    }
+    .about-us-building-imgbox-round-second {
+        height: 590px;
+        width: 660px;
+        top: -159px;
+        left: -190px;
+    }
 }

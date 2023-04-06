@@ -23,48 +23,46 @@ export const AboutHero = () => {
                     </Link>
                 </div>
 
-                <div className="about-us-list-box">
-                    <ul className="about-us-hero-list">
-                        <li className="about-us-hero-item">
-                            <div className="about-us-hero-item-infotbox">
-                                <h3 className="about-us-hero-item-title">
-                                    30 000 т.
-                                </h3>
-                                <div className="about-us-hero-item-textbox">
-                                    <h4 className="about-us-hero-item-text">
-                                        Производственная мощность
-                                    </h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="about-us-hero-item">
-                            <div className="about-us-hero-item-infotbox">
-                                <h3 className="about-us-hero-item-title">
-                                    22 000
-                                </h3>
+                <ul className="about-us-hero-list">
+                    <li className="about-us-hero-item">
+                        <div className="about-us-hero-item-infotbox">
+                            <h3 className="about-us-hero-item-title">
+                                30 000 т.
+                            </h3>
+                            <div className="about-us-hero-item-textbox">
                                 <h4 className="about-us-hero-item-text">
-                                    квадратных метров
+                                    Производственная мощность
                                 </h4>
-                                <p className="about-us-hero-item-desc">
-                                    Площадь производственного комплекса составляет более 22 тысяч квадратных метров.
-                                </p>
                             </div>
-                        </li>
-                        <li className="about-us-hero-item">
-                            <div className="about-us-hero-item-infotbox">
-                                <h3 className="about-us-hero-item-title">
-                                    250
-                                </h3>
-                                <h4 className="about-us-hero-item-text">
-                                    человек
-                                </h4>
-                                <p className="about-us-hero-item-desc">
-                                    Штат сотрудников насчитывает250человек.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li className="about-us-hero-item">
+                        <div className="about-us-hero-item-infotbox">
+                            <h3 className="about-us-hero-item-title">
+                                22 000
+                            </h3>
+                            <h4 className="about-us-hero-item-text">
+                                квадратных метров
+                            </h4>
+                            <p className="about-us-hero-item-desc">
+                                Площадь производственного комплекса составляет более 22 тысяч квадратных метров.
+                            </p>
+                        </div>
+                    </li>
+                    <li className="about-us-hero-item">
+                        <div className="about-us-hero-item-infotbox">
+                            <h3 className="about-us-hero-item-title">
+                                250
+                            </h3>
+                            <h4 className="about-us-hero-item-text">
+                                человек
+                            </h4>
+                            <p className="about-us-hero-item-desc">
+                                Штат сотрудников насчитывает250человек.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </>

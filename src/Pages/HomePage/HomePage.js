@@ -16,7 +16,7 @@ import { Motivation } from "../../components/Motivation/Motivation";
 import { AboutUsSection } from "../../components/AboutUsSection/AboutUsSection";
 import { CompanyConfidence } from "../../components/CompanyConfidence/CompanyConfidence";
 
-export const AboutUs = () => {
+export const HomePage = () => {
   const ImgWrapperBg = useRef();
   const firstCircleImg = useRef();
   const secondCircleImg = useRef();

@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
-import HomePage, { AboutUs } from "./HomePage/HomePage";
+import HomePage from "./HomePage/HomePage";
+import AboutUs from "./AboutUs/AboutUs";
 
 export const routeConfig = [
   {
